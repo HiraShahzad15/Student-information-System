@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Student_information.Models.Student>
+@{
+    ViewData["Title"] = "StudentList";
+}
+<div class="text-center">
+    <h1 class="display-4">StudentList</h1>
+
+</div>
+<div class="row">
+    @foreach (var student in Model)
+    {
+    <div id="Stdinfo" class="col-lg-3 col-md-2 col-sm-1 ">
+            <span id="bookquantity"><inputn type="number" name="quantity" value="" placeholder="0 " />Student Record</span>
+            <span id="cartbutton"><button>Student Record</button></span>
+    </div>
+    }
+</div>
